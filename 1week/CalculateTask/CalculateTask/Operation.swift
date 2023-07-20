@@ -25,7 +25,7 @@ public class AbstractOperation: Operation {
     public func calculate(x: Int, y: Int) -> Int { return -1 }
 }
 
-final public class AddOperation: AbstractOperation {
+public final class AddOperation: AbstractOperation {
     override init() {
         super.init()
         type = .add
@@ -36,7 +36,7 @@ final public class AddOperation: AbstractOperation {
     }
 }
 
-final public class SubtractOperation: AbstractOperation {
+public final class SubtractOperation: AbstractOperation {
     override public init() {
         super.init()
         self.type = .subtract
@@ -47,7 +47,7 @@ final public class SubtractOperation: AbstractOperation {
     }
 }
 
-final class MultiplyOperation: AbstractOperation {
+public final class MultiplyOperation: AbstractOperation {
     override public init() {
         super.init()
         self.type = .multiply
@@ -58,7 +58,7 @@ final class MultiplyOperation: AbstractOperation {
     }
 }
 
-final class DivideOperation: AbstractOperation {
+public final class DivideOperation: AbstractOperation {
     override public init() {
         super.init()
         self.type = .divide

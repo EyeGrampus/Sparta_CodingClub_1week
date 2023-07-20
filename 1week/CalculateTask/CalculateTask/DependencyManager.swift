@@ -44,7 +44,7 @@ public final class DependencyContainer {
     
 }
 
-final public class Dependency: Hashable, Equatable {
+public final class Dependency: Hashable, Equatable {
     
     private let identity: String
     private let type: Any.Type
@@ -62,7 +62,7 @@ final public class Dependency: Hashable, Equatable {
     
 }
 
-final public class DependencyInjector {
+public final class DependencyInjector {
     
     public func inject() {
         let dependencyContainer = DependencyContainer.shared

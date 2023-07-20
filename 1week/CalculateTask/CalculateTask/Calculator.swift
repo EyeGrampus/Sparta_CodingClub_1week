@@ -8,7 +8,7 @@
 import Foundation
 
 
-final public class Calculator {
+public final class Calculator {
     
     private enum InputReadLineError: LocalizedError, Error {
         case typeConversionError
