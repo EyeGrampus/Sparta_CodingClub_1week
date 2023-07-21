@@ -71,6 +71,16 @@ public final class DependencyInjector {
         dependencyContainer.regist(SubtractOperation.self, implement: SubtractOperation())
         dependencyContainer.regist(MultiplyOperation.self, implement: MultiplyOperation())
         dependencyContainer.regist(DivideOperation.self, implement: DivideOperation())
+        
+        dependencyContainer.regist(
+            Calculator.self,
+            implement: Calculator(
+                addOperation: dependencyContainer.find(AddOperation.self),
+                subtractOperation: dependencyContainer.find(SubtractOperation.self),
+                multiplyOperation: dependencyContainer.find(MultiplyOperation.self),
+                divideOperation: dependencyContainer.find(DivideOperation.self)
+            )
+        )
     }
     
 }

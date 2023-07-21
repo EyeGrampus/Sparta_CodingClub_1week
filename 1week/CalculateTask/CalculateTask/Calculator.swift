@@ -49,7 +49,11 @@ public final class Calculator {
         self.divideOperation = divideOperation
     }
     
-    private func operation(x: Int, y: Int, type: CaculateType) {
+    private func operation(
+        x: Int,
+        y: Int,
+        type: CaculateType
+    ) {
 //        print(#function)
         var equation = "\(x) \(type.rawValue) \(y) = "
         switch type {

@@ -30,7 +30,10 @@ public final class AddOperation: AbstractOperation {
         super.init()
         type = .add
     }
-    override public func calculate(x: Int, y: Int) -> Int {
+    override public func calculate(
+        x: Int,
+        y: Int
+    ) -> Int {
 //        print(#function)
         return x+y
     }
@@ -41,7 +44,10 @@ public final class SubtractOperation: AbstractOperation {
         super.init()
         self.type = .subtract
     }
-    override public func calculate(x: Int, y: Int) -> Int {
+    override public func calculate(
+        x: Int,
+        y: Int
+    ) -> Int {
 //        print(#function)
         return x-y
     }
@@ -52,7 +58,10 @@ public final class MultiplyOperation: AbstractOperation {
         super.init()
         self.type = .multiply
     }
-    override public func calculate(x: Int, y: Int) -> Int {
+    override public func calculate(
+        x: Int,
+        y: Int
+    ) -> Int {
 //        print(#function)
         return x*y
     }
@@ -63,7 +72,10 @@ public final class DivideOperation: AbstractOperation {
         super.init()
         self.type = .divide
     }
-    override public func calculate(x: Int, y: Int) -> Int {
+    override public func calculate(
+        x: Int,
+        y: Int
+    ) -> Int {
 //        print(#function)
         return x/y
     }
